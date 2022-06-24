@@ -21,6 +21,7 @@ This section explains the steps to add age and gender recognition functionality 
   + Create a body select and raw and JSON as format.
   + Use this json as template:
     + {"img": "<insert the base64 encoded image here>"}
+  + ![postman.JPG](postman.JPG)  
   + Find an image from a face you want to know the age and gender and base64 encode the content.
     + You can use this for example: https://elmah.io/tools/base64-image-encoder/
 + Upload the function as learned in step 1.
