@@ -8,7 +8,7 @@
     + Use HttpTrigger as name for the Http trigger
     + Select Anonymous as Authorization level
     + Open in current window
-+ Press F5 to test the echo function
++ Press F5 to test the echo function (it runs locally in a function emulation)
 + Test your endpoint by calling http://localhost:7071/api/HttpTrigger?name=test
 
 # Create azure function
