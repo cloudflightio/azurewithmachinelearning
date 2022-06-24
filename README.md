@@ -37,6 +37,7 @@ Prerequisites for live coding
 ## How To
 
 + Login to Azure in Visual studio code
+    + Terminal in VS Code <code>az login</code> (Opens browser, login there)   
 + Checkout and open folder 01-echoFunction
 + Continue with 02 and 03
 
