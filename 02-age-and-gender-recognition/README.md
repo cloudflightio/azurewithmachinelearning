@@ -27,6 +27,24 @@ This section explains the steps to add age and gender recognition functionality 
     + You can use this for example: https://elmah.io/tools/base64-image-encoder/
 
 + Alternativly use the provided HTML template - upload.html - to test your function.
+  + To get it working you need to consider CORS
+  + For local development extend <code>local.settings.json</code>
+    <code>
+    {
+      "IsEncrypted": false,
+      "Values": {
+        "AzureWebJobsStorage": "",
+        "FUNCTIONS_WORKER_RUNTIME": "python"
+      },
+      "Host": {
+        "CORS": "*"
+      }
+    }
+    </code>
+  
+  + For deployed versions go to portal.azure.com
+    + Navigate to functions app and enable CORS for the domain * (menu point on the left side at the bottom)
+    + ![cors.JPG}(cors.JPG)    
     
 + Upload the function as learned in step 1.
 + Try it again with the Azure function app.
