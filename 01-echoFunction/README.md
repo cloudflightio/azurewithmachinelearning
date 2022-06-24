@@ -30,3 +30,5 @@
 + Wait until everything is deployed 
 + Test your endpoint by calling https://<name_of_your_function_app>.azurewebsites.net/api/httptrigger?name=test
 
++ Go to portal.azure.com -> Navigate to your function app and experiment a little bit what you can see there -> Monitoring, Executions, ...
+
