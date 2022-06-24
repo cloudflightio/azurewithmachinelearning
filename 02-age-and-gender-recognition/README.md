@@ -29,7 +29,7 @@ This section explains the steps to add age and gender recognition functionality 
 + Alternativly use the provided HTML template - upload.html - to test your function.
   + To get it working you need to consider CORS
   + For local development extend <code>local.settings.json</code>
-    <code>
+    ```
     {
       "IsEncrypted": false,
       "Values": {
@@ -40,11 +40,11 @@ This section explains the steps to add age and gender recognition functionality 
         "CORS": "*"
       }
     }
-    </code>
+    ```
   
   + For deployed versions go to portal.azure.com
     + Navigate to functions app and enable CORS for the domain * (menu point on the left side at the bottom)
-    + ![cors.JPG}(cors.JPG)    
+    + ![cors.JPG](cors.JPG)    
     
 + Upload the function as learned in step 1.
 + Try it again with the Azure function app.
