@@ -25,7 +25,7 @@
 + Click the upload button
 + ![img_1.png](img_1.png)
 + Select the subscription
-+ Select your function app
++ Select your function app (if it is not visible in the resource field, restart VS Code and retry)
 + Click deploy
 + Wait until everything is deployed 
 + Test your endpoint by calling https://<name_of_your_function_app>.azurewebsites.net/api/httptrigger?name=test
