@@ -7,6 +7,7 @@ This section explains the steps to add age and gender recognition functionality 
   + onnxruntime 
   + opencv-python
 + Copy __init__.py and box_utils.py from this folder to your HttpTrigger folder. Overwrite __init__.py
++ Create new subdirectory models under the HttpTrigger folder
 + Download following model files and put them into models folder:
   + https://github.com/onnx/models/blob/main/vision/body_analysis/emotion_ferplus/model/emotion-ferplus-8.onnx
   + https://github.com/onnx/models/blob/main/vision/body_analysis/ultraface/models/version-RFB-640.onnx
