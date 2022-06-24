@@ -17,6 +17,7 @@ Prerequisites for live coding
         if the school is eligble https://azure.microsoft.com/en-gb/free/students/
     each team has to prepare a laptop with the following software:        
         install Python 3.7 https://www.python.org/downloads/release/python-370/
+            add python install directory to your PATH variable
             verify with typing python --version
         install following python packages with
             pip install azure.functions 
