@@ -18,12 +18,15 @@ Prerequisites for live coding
     each team has to prepare a laptop with the following software:        
         install Python 3.7 https://www.python.org/downloads/release/python-370/
             add python install directory to your PATH variable
+            add phyton install directory /SCRIPTS to your PATH variable
+                C:\Users\<USERNAME>\AppData\Local\Programs\Python\Python37
+                C:\Users\<USERNAME>\AppData\Local\Programs\Python\Python37\Scripts
             verify with typing python --version
         install following python packages with
-            pip install azure.functions 
-            pip install opencv-python
-            pip install onnxruntime
-            pip install numpy
+            python -m pip install azure.functions 
+            python -m pip install opencv-python
+            python -m pip install onnxruntime
+            python -m pip install numpy
         install Visual Studio Code https://code.visualstudio.com/
         install Python extenstion https://marketplace.visualstudio.com/items?itemName=ms-python.python
         install Azure CLI https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-windows?tabs=azure-cli
