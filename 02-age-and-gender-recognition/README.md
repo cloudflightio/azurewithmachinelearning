@@ -1,4 +1,4 @@
-# Age and gender recognition
+# Gender recognition
 
 This section explains the steps to add age and gender recognition functionality to your function endpoint.
 
@@ -13,7 +13,6 @@ This section explains the steps to add age and gender recognition functionality 
   + https://github.com/onnx/models/blob/main/vision/body_analysis/emotion_ferplus/model/emotion-ferplus-8.onnx
   + https://github.com/onnx/models/blob/main/vision/body_analysis/ultraface/models/version-RFB-640.onnx
   + https://github.com/onnx/models/blob/main/vision/body_analysis/age_gender/models/vgg_ilsvrc_16_gender_imdb_wiki.onnx
-  + https://github.com/onnx/models/blob/main/vision/body_analysis/age_gender/models/vgg_ilsvrc_16_age_imdb_wiki.onnx
 + Press F5 to start the function app.
   + In case of phyton errors execute <code>python -m pip install --upgrade pip</code> in a VS Code terminal and retry    
 

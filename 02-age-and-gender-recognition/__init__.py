@@ -33,11 +33,10 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
             box = scale(boxes[i, :])
             cropped = cropImage(orig_image, box)
             gender = genderClassifier(cropped)
-            age = ageClassifier(cropped)
-            logging.info(f'Box {i} --> {gender}, {age}')
+            logging.info(f'Box {i} --> {gender}')
 
             cv2.rectangle(orig_image, (box[0], box[1]), (box[2], box[3]), color, 4)
-            cv2.putText(orig_image, f'{gender}, {age}', (box[0], box[1]-10), cv2.FONT_HERSHEY_SIMPLEX, 0.7, color, 2, cv2.LINE_AA)
+            cv2.putText(orig_image, f'{gender}', (box[0], box[1]-10), cv2.FONT_HERSHEY_SIMPLEX, 0.7, color, 2, cv2.LINE_AA)
 
         img_encoded = cv2.imencode('.jpg', orig_image)
         img_response = img_encoded[1].tobytes()
@@ -116,20 +115,3 @@ def genderClassifier(orig_image):
     genders = gender_classifier.run(None, {input_name: image})
     gender = genderList[genders[0].argmax()]
     return gender
-# ------------------------------------------------------------------------------------------------------------------------------------------------
-# Face age classification using VGG-16 onnx model
-age_classifier_onnx = "HttpTrigger/models/vgg_ilsvrc_16_age_imdb_wiki.onnx"
-age_classifier = ort.InferenceSession(age_classifier_onnx)
-
-# age classification method
-def ageClassifier(orig_image):
-    image = cv2.cvtColor(orig_image, cv2.COLOR_BGR2RGB)
-    image = cv2.resize(image, (224, 224))
-    image = np.transpose(image, [2, 0, 1])
-    image = np.expand_dims(image, axis=0)
-    image = image.astype(np.float32)
-
-    input_name = age_classifier.get_inputs()[0].name
-    ages = age_classifier.run(None, {input_name: image})
-    age = round(sum(ages[0][0] * list(range(0, 101))), 1)
-    return age
