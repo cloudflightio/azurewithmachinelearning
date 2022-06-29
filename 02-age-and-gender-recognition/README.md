@@ -6,7 +6,7 @@ This section explains the steps to add age and gender recognition functionality 
   + numpy 
   + onnxruntime 
   + opencv-python
-+ Copy __init__.py and box_utils.py from this folder to your HttpTrigger folder. Overwrite __init__.py
++ Copy `__init__.py` and `box_utils.py` from this folder to your `HttpTrigger` folder. Overwrite `__init__.py`
 + Create new subdirectory models under the HttpTrigger folder
 + Download following model files and put them into models folder:
   + IMPORTANT -> Open links in new tab and click github download button to get the real files. Right Clicking the links below selecting Save As will store HTML files ;)
