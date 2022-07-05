@@ -1,6 +1,6 @@
 # Gender recognition
 
-This section explains the steps to add age and gender recognition functionality to your function endpoint.
+This section explains the steps to add (age and) gender recognition functionality to your function endpoint.
 
 + in requirements.txt add following dependencies:
 
