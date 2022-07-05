@@ -3,7 +3,7 @@ Guided project for creating a serverless azure function in combination with a ma
 
 The endpoint will accept an image to be uploaded and will return information about the uploaded image like age, gender, emotions.
 
-![result.JPG](result.JPG)    
+![finalResult.JPG](finalResult.JPG)    
 
 ## Pre Requisites
 
