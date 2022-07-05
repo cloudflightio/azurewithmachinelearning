@@ -51,3 +51,7 @@ This section explains the steps to add age and gender recognition functionality 
     
 + Upload the function as learned in step 1.
 + Try it again with the Azure function app.
+
+### Pro Stage
++ If you want to play around with age classification take a look at this model https://github.com/onnx/models/blob/main/vision/body_analysis/age_gender/models/vgg_ilsvrc_16_age_imdb_wiki.onnx
++ Be aware that due to memory restrictions on functions (1.5Gb RAM) emotion and age classification will not work at the same time - Choose either or. ;)
