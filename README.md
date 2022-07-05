@@ -1,13 +1,15 @@
 # azurewithmachinelearning
-Sample project for creating a serverless azure function in combination with a machine learning model
+Guided project for creating a serverless azure function in combination with a machine learning model.
 
 The endpoint will accept an image to be uploaded and will return information about the uploaded image like age, gender, emotions.
 
+![result.JPG](result.JPG)    
+
 ## Pre Requisites
 
-To do the live coding efficiently there are some pre-requisites that need to be done prior to your visit (see below)
+To do the live coding efficiently there are some pre-requisites that need to be done (see below)
 
-One of them is creating a free azure account per team. The main reason for doing so is, that even after your visit you can continue experimenting and working on your Azure account and learn even more. 
+One of them is creating a free azure account (and a subscription) per team. The main reason for doing so is, that even after your visit you can continue experimenting and working on your Azure account and learn even more. 
 
 If there are any obstacles please contact us then we need to find another solution.
 Prerequisites for live coding
