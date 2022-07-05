@@ -1,5 +1,7 @@
 # Emotion recognition
 
+Goal -> Add emotion recognition to your azure function. ;) :) :( :|
+
 This section explains the first steps to add emotion recognition:
 
 + See https://github.com/onnx/models/tree/main/vision/body_analysis/emotion_ferplus for documentation of the emotion recognition model.
