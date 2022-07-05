@@ -46,6 +46,7 @@ This section explains the steps to add age and gender recognition functionality 
   
   + For deployed versions go to portal.azure.com
     + Navigate to functions app and enable CORS for the domain * (menu point on the left side at the bottom)
+    + In production do not enable *, just for testing here. If you want to be precise just enter the domain your are executing the request from.
     + ![cors.JPG](cors.JPG)    
     
 + Upload the function as learned in step 1.
