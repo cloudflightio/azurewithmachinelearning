@@ -1,5 +1,8 @@
 # azurewithmachinelearning
-Guided project for creating a serverless azure function in combination with a machine learning model.
+
+This repository contains the code and instructions for an interactive coding workshop for students dealing with the topic cloud native on azure, serverless functions and machine learning.
+
+It is a guided project for creating a serverless azure function in combination with a machine learning model.
 
 The endpoint will accept an image to be uploaded and will return information about the uploaded image like age, gender, emotions.
 
