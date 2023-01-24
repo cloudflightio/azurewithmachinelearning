@@ -7,7 +7,7 @@ This section explains the steps to add (age and) gender recognition functionalit
   ```
   numpy
   onnxruntime 
-  opencv-python
+  opencv-python==4.1.0.25
   ```
 
 + Copy `__init__.py` and `box_utils.py` from this folder to your HttpTrigger folder. Overwrite `__init__.py`
