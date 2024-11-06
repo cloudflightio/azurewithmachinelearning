@@ -14,13 +14,17 @@
           config = { allowUnfree = true; };
         }); mkShell {
           buildInputs = [
-            vscode
+            gcc-unwrapped
+		    glib
+	        vscode
             azure-cli
             azure-functions-core-tools
             python311
             python311Packages.virtualenv
             git-lfs
           ];
+		  LD_LIBRARY_PATH = "${pkgs.stdenv.cc.cc.lib}/lib:${pkgs.libGL}/lib/:${pkgs.glib.out}/lib";
+		  DONT_PROMPT_WSL_INSTALL="true";
           shellHook = ''
           # Define VSCode extensions to install
           extensions="ms-python.python ms-azuretools.vscode-azurefunctions humao.rest-client"
@@ -47,7 +51,6 @@
           pip3 install azure-functions opencv-python onnxruntime numpy
 
           export PYTHONPATH=$(pwd)/.venv/lib/python3.11/site-packages
-          export LD_LIBRARY_PATH="${pkgs.stdenv.cc.cc.lib}/lib";
 
           # Open
           code ..
