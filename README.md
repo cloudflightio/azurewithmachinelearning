@@ -1,48 +1,71 @@
-# azurewithmachinelearning
+# Azure with Machine Learning Workshop
 
-This repository contains the code and instructions for an interactive coding workshop for students dealing with the topic cloud native on azure, serverless functions and machine learning.
+Welcome to the Azure with Machine Learning workshop! This repository contains the code and instructions for an
+interactive coding session focused on cloud-native development on Azure, serverless functions, and machine learning.
 
-It is a guided project for creating a serverless azure function in combination with a machine learning model.
+## Project Overview
 
-The endpoint will accept an image to be uploaded and will return information about the uploaded image like age, gender, emotions.
+In this project, you'll create a serverless Azure function that integrates with a machine learning model. The function
+will accept an image upload and return information about the image, such as age and emotions.
 
-![finalResult.JPG](finalResult.JPG)    
+![finalResult.JPG](finalResult.JPG)
 
-## Pre Requisites
+## Prerequisites
 
-To do the live coding efficiently there are some pre-requisites that need to be done (see below)
+Before you begin, ensure you have the following:
 
-One of them is creating a free azure account (and a subscription) per team. The main reason for doing so is, that even after your visit you can continue experimenting and working on your Azure account and learn even more. 
+### Find a Team
+- This is a Team Exercise. Form Groups of 2-3 students.
 
-If there are any obstacles please contact us then we need to find another solution.
-Prerequisites for live coding
+### Azure Account
 
-    Students form teams of 2-3
-    each team needs a free azure account https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=docs&utm_campaign=visualstudio
-        if the school is eligble https://azure.microsoft.com/en-gb/free/students/
-    each team has to prepare a laptop with the following software:        
-        install Python 3.7 https://www.python.org/downloads/release/python-370/
-            add python install directory to your PATH variable
-            add phyton install directory /SCRIPTS to your PATH variable
-                C:\Users\<USERNAME>\AppData\Local\Programs\Python\Python37
-                C:\Users\<USERNAME>\AppData\Local\Programs\Python\Python37\Scripts
-            verify with typing python --version
-        install following python packages with
-            python -m pip install azure.functions 
-            python -m pip install opencv-python
-            python -m pip install onnxruntime
-            python -m pip install numpy
-        install Visual Studio Code https://code.visualstudio.com/
-        install Python extenstion https://marketplace.visualstudio.com/items?itemName=ms-python.python
-        install Azure CLI https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-windows?tabs=azure-cli
-        install Azure Function extension https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions 
-        install Arzue Function Core Tools https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local?tabs=v4%2Cwindows%2Ccsharp%2Cportal%2Cbash#install-the-azure-functions-core-tools
-        install Postman https://www.postman.com/
+- Each team needs a free Azure account:
+    - Create Azure Account https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=docs&utm_campaign=visualstudio
+    - If eligible, use the Azure for Students offer. https://azure.microsoft.com/en-gb/free/students/
 
-## How To
+### Tools and Software
 
-+ Login to Azure in Visual studio code
-    + Terminal in VS Code <code>az login</code> (Opens browser, login there)   
-+ Checkout and open folder 01-echoFunction
-+ Continue with 02 and 03
+#### Automatic Setup
+- If you have `nix` installed, use the flake: from project-root run `nix development`. Everything will be set up for you. You can use the `setup.sh` script to install `nix`.
 
+#### Alternatively
+
+- **Azure CLI**: Install Azure CLI https://learn.microsoft.com/en-us/cli/azure/install-azure-cli
+- **Azure Functions Core Tools**: Install Azure Functions Core Tools https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local?tabs=v4%2Cwindows%2Ccsharp%2Cportal%2Cbash#install-the-azure-functions-core-tools
+- **Visual Studio Code**: Download Visual Studio Code https://code.visualstudio.com/
+    - Install these extensions:
+        - REST Client https://marketplace.visualstudio.com/items?itemName=humao.rest-client
+        - Python https://marketplace.visualstudio.com/items?itemName=ms-python.python
+        - Azure Functions https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions
+- **Python 3.11 on PATH**: Download Python 3.11 https://www.python.org/downloads/release/python-3110/
+    - Install these Python packages:
+        - `azure-functions`
+        - `opencv-python`
+        - `onnxruntime`
+        - `numpy`
+    - Set up a virtual environment in the `./HttpTrigger` directory:
+      ```bash
+      python3.11 -m venv .venv
+      ```
+
+## Getting Started
+
+Follow these steps to set up and run the project:
+
+1. **Login to Azure**
+
+- Open the terminal in Visual Studio Code and run:
+  ```bash
+  az login
+  ```
+- This will open a browser window for you to log in.
+
+2. **Set Up the Project**
+
+- Clone this repository and navigate to the project directory.
+- Open the folder starting with `01` in Visual Studio Code.
+- Follow the instructions in the subsequent folders (`02`, `03`, etc.).
+
+## Troubleshooting
+
+If you encounter any issues, please reach out to us for assistance. We're here to help you succeed!
