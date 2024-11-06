@@ -26,7 +26,7 @@ Before you begin, ensure you have the following:
 ### Tools and Software
 
 #### Automatic Setup
-- If you have `nix` installed, use the flake: from project-root run `nix development`. Everything will be set up for you. You can use the `setup.sh` script to install `nix`.
+- If you have `nix` installed, use the flake: from project-root run `nix develop`. Everything will be set up for you. You can use the `setup.sh` script to install `nix`.
 
 #### Alternatively
 
