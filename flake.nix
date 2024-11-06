@@ -21,6 +21,7 @@
             azure-functions-core-tools
             python311
             python311Packages.virtualenv
+            git-lfs
           ];
 		  LD_LIBRARY_PATH = "${pkgs.stdenv.cc.cc.lib}/lib:${pkgs.libGL}/lib/:${pkgs.glib.out}/lib";
 		  DONT_PROMPT_WSL_INSTALL="true";
