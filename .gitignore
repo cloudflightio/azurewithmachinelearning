@@ -138,4 +138,3 @@ __azurite_db*__.json
 .venv/
 HttpTrigger/
 !HttpTrigger/models/
-HttpTrigger/models/vgg_ilsvrc_16_age_imdb_wiki.onnx
