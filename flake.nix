@@ -19,6 +19,7 @@
             azure-functions-core-tools
             python311
             python311Packages.virtualenv
+            git-lfs
           ];
           shellHook = ''
           # Define VSCode extensions to install
@@ -46,6 +47,7 @@
           pip3 install azure-functions opencv-python onnxruntime numpy
 
           export PYTHONPATH=$(pwd)/.venv/lib/python3.11/site-packages
+          export LD_LIBRARY_PATH="${pkgs.stdenv.cc.cc.lib}/lib";
 
           # Open
           code ..
