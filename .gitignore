@@ -137,4 +137,4 @@ __azurite_db*__.json
 .idea/
 .venv/
 HttpTrigger/
-!HttpTrigger/models/
+!HttpTrigger/.gitkeep
